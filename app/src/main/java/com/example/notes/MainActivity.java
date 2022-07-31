@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
-//                intent.putExtra("note",note.get(i));
+
         startActivity(intent);
 
         return true;
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                intent=new Intent(getApplicationContext(),noteActivity.class);
                 intent.putExtra("i",i);
-//                intent.putExtra("note",note.get(i));
+
                 startActivity(intent);
             }
         });
@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
                 new AlertDialog.Builder(MainActivity.this)
                         .setIcon(android.R.drawable.ic_dialog_info)
                         .setTitle("Are You Sure You Want to Delete this Note?")
-//                    .setMessage("Why do this buddy?? Is it really important dude??")
+
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int j) {
